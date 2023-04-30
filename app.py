@@ -20,7 +20,7 @@ bcrypt = Bcrypt(app)
 #     return render_template("index.html")
 
 
-@app.route("/index")
+@app.route("/")
 def index():
     if 'fullName' in session:
         fullName = session['fullName']
